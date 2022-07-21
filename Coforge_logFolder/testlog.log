@@ -1,0 +1,7 @@
+2022-07-16 10:44:03,520 - Coforge_HRM_Login_Logout -INFO - ============launchApp===================
+2022-07-16 10:44:03,524 - Coforge_HRM_Login_Logout -INFO - Application launched successfully on chrome browser, app URL: https://opensource-demo.orangehrmlive.com/
+2022-07-16 10:44:06,898 - Coforge_HRM_Login_Logout -INFO - enter userName : Admin
+2022-07-16 10:44:07,039 - Coforge_HRM_Login_Logout -INFO - enter password: admin123
+2022-07-16 10:44:07,125 - Coforge_HRM_Login_Logout -INFO - Click on login button
+2022-07-16 10:44:12,677 - Coforge_HRM_Login_Logout -INFO - Verification of dashboard sucessfully.
+2022-07-16 10:44:12,685 - Coforge_HRM_Login_Logout -INFO - closing browser
