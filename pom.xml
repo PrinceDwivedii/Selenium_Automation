@@ -27,7 +27,7 @@
                 <version>2.18.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng_crossBrowserTesting.xml</suiteXmlFile>
+                        <suiteXmlFile>testng_actionExample.xml</suiteXmlFile>
                         <!-- <suiteXmlFile>testng_crossBrowserTesting_parallel.xml</suiteXmlFile> -->
                     </suiteXmlFiles>
                 </configuration>

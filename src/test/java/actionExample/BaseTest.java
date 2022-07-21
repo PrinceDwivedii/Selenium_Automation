@@ -21,8 +21,9 @@ public class BaseTest {
 //		WebDriverManager.chromedriver().setup();
 //		driver = new ChromeDriver();
 		
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 		//driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
 		//driver.get("https://jqueryui.com/droppable/");

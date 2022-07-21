@@ -9,16 +9,174 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">EdgeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,424</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ChromeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18,815</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">41,239</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">EdgeTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">4,337</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ChromeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,314</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">23,651</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EdgeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">crossBrowserTesting.HRMLoginTest</td><td><a href="#m0">login</a></td><td rowspan="1">1658432934040</td><td rowspan="1">5164</td></tr><tr class="passedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1658432939214</td><td rowspan="1">1291</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">crossBrowserTesting.HRMLoginTest</td><td><a href="#m2">login</a></td><td rowspan="1">1658432953048</td><td rowspan="1">4909</td></tr><tr class="passedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1658432957958</td><td rowspan="1">1493</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EdgeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">crossBrowserTesting.HRMLoginTest</td><td><a href="#m0">launchApp</a></td><td rowspan="1">1658438772019</td><td rowspan="1">4297</td></tr><tr><th colspan="4">EdgeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">crossBrowserTesting.HRMLoginTest</td><td><a href="#m1">closeApp</a></td><td rowspan="1">1658438776342</td><td rowspan="1">0</td></tr><tr><th colspan="4">EdgeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">crossBrowserTesting.HRMLoginTest</td><td><a href="#m2">login</a></td><td rowspan="1">1658438776339</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">logout</a></td><td rowspan="1">1658438776341</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">crossBrowserTesting.HRMLoginTest</td><td><a href="#m4">login</a></td><td rowspan="1">1658438785101</td><td rowspan="1">5556</td></tr><tr class="passedeven"><td><a href="#m5">logout</a></td><td rowspan="1">1658438790658</td><td rowspan="1">1035</td></tr></tbody>
 </table>
-<h2>EdgeTest</h2><h3 id="m0">crossBrowserTesting.HRMLoginTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">crossBrowserTesting.HRMLoginTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ChromeTest</h2><h3 id="m2">crossBrowserTesting.HRMLoginTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">crossBrowserTesting.HRMLoginTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EdgeTest</h2><h3 id="m0">crossBrowserTesting.HRMLoginTest#launchApp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>edge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">crossBrowserTesting.HRMLoginTest#closeApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">crossBrowserTesting.HRMLoginTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">crossBrowserTesting.HRMLoginTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTest</h2><h3 id="m4">crossBrowserTesting.HRMLoginTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">crossBrowserTesting.HRMLoginTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EdgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 22 01:18:42 IST 2022</td>
+<td>Started on:</td><td>Fri Jul 22 02:56:12 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22424 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4337 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,172 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='crossBrowserTesting.HRMLoginTest.launchApp()'><b>launchApp</b><br>Test class: crossBrowserTesting.HRMLoginTest<br>Parameters: edge</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198499365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198499365'><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>4</td>
+<td>crossBrowserTesting.HRMLoginTest@28975c28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='crossBrowserTesting.HRMLoginTest.closeApp()'><b>closeApp</b><br>Test class: crossBrowserTesting.HRMLoginTest</td>
+<td></td>
+<td>0</td>
+<td>crossBrowserTesting.HRMLoginTest@28975c28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,13 +241,285 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='crossBrowserTesting.HRMLoginTest.login()'><b>login</b><br>Test class: crossBrowserTesting.HRMLoginTest<br>Test method: verify with valid user details</td>
-<td></td>
-<td>5</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1526866775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1526866775'><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
 <td>crossBrowserTesting.HRMLoginTest@28975c28</td></tr>
 <tr>
 <td title='crossBrowserTesting.HRMLoginTest.logout()'><b>logout</b><br>Test class: crossBrowserTesting.HRMLoginTest</td>
-<td></td>
-<td>1</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110785285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110785285'><pre>org.openqa.selenium.WebDriverException: unknown error: Microsoft Edge failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn&apos;t exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRINCE-DWIVEDI&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: driver.version: EdgeDriver
+remote stacktrace: Backtrace:
+	Microsoft::Applications::Events::EventProperties::unpack [0x008CB053+58259]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007C0251+690561]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x0064ACEE+3518]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00667E25+44709]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00664239+29369]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068E3D5+201813]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0068DDFE+200318]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x006892D6+181078]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066C786+63494]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0066D516+66966]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00AC2675+668677]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35DF3+93059]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A35A87+92183]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A3993A+108234]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00A364DA+94826]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007D1F8B+763579]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCAE8+807448]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007DCC72+807842]
+	Microsoft::Applications::Events::ISemanticContext::SetTicket [0x007EF322+883282]
+	BaseThreadInitThunk [0x75C86739+25]
+	RtlGetFullPathName_UEx [0x77038FEF+1215]
+	RtlGetFullPathName_UEx [0x77038FBD+1165]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at crossBrowserTesting.BaseTest.launchApp(BaseTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:643)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:632)
+	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
 <td>crossBrowserTesting.HRMLoginTest@28975c28</td></tr>
 </table><p>
 </body>
